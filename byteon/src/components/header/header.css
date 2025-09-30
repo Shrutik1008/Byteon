@@ -1,2 +1,6 @@
 header{width:100%;height:80px; margin : auto;padding: 15px,0px;}
-header .headerSearch{width:100%;height: 60px; margin: 30px 50px;border:1px solid #896605;align:center;border-radius: 10px; display:flex;justify-content:space-between;align-items:center;}
+header .headerSearch{width:100%;height: 60px; margin: 30px 50px;border:1px solid #896605;align:center;border-radius: 10px; padding: 10px;}
+
+header .headerSearch .selecrDrop{width:20%;font-size: 16px;}
+header .headerSearch .search{width:80%;}
+header .headerSearch input{width:100%;height: 40px; border:none; outline:none; font-size: 18px; padding-left: 40px;}

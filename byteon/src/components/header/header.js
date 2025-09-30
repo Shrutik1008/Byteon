@@ -19,10 +19,14 @@ const Header =()=> {
                                 <div className='seletDrop curso'>
                                     All Categories
                                 </div>
+
+                                <div className='search'>
+                                    <input type='text' className='form-control' placeholder='Search Products...'/>
                               </div>
                          </div>
                      </div>
                   </div>  
+                  </div>
             </header>
         </>
     )
