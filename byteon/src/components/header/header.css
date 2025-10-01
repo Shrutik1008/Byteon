@@ -1,2 +1,6 @@
-header{width:100%;height:80px; margin : auto;padding: 15px,0px;}
-header .headerSearch{width:100%;height: 60px; margin: 30px 50px;border:1px solid #896605;align:center;border-radius: 10px; display:flex;justify-content:space-between;align-items:center;}
+header{width:100%;height:80px; margin : auto;padding: 15px 0px;}
+header .headerSearch{width:100%;height: 60px; margin: 30px 50px;border:1px solid #896605;align:center;border-radius: 10px; display:flex;justify-content:space-between;align-items:center; padding: 10px;}
+header .headerSearch .seletDrop{width: 20%;}
+header .headerSearch .search{width: 80%;position : relative;}
+header .headerSearch .search input{width: 100%;height: 50px; border:0px ;outline: none !important; border-radius: 10px; border:1px solid #896605;padding-left: 140px;}
+header .headerSearch .search .SearchIcon{position: absolute; top: 5px; right: 15px;}
