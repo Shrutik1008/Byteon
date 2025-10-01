@@ -1,9 +1,14 @@
 import React from 'react';
+import '../SelectDrop/select.css';
 
 const Select = () => {
     return (
         <>
-        jjhsd
+        <div className="selectDrop">
+            <div classname='searchField'>
+                <input type="text"/>
+            </div>
+        </div>
         </>
 
     )

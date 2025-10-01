@@ -2,7 +2,7 @@ import React from 'react';
 import '../header/header.css';
 import Logo from '../../assets/images/Logo.png';
 import SearchIcon from '@mui/icons-material/Search';
-
+import Select from  '../SelectDrop/select';;
 const Header =()=> {
     return(
         <>
@@ -18,6 +18,7 @@ const Header =()=> {
                               <div className='headerSearch d-flex align-items-center'>
                                 <div className='seletDrop curso'>
                                     All Categories
+                                    <Select />
                                 </div>
 
                                 <div className='search'>
