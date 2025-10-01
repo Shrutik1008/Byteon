@@ -26,11 +26,6 @@ const Header =()=> {
                                         <SearchIcon style={{fontSize:40,color:'#896605'}}/>  
                                     </div>                                  
                                 </div>
-
-
-                                <div className='search'>
-                                    <input type='text' className='form-control' placeholder='Search Products...'/>
-                              </div>
                          </div>
                      </div>
                   </div>  
