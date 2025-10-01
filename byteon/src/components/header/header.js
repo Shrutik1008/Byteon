@@ -19,16 +19,22 @@ const Header =()=> {
                                 <div className='seletDrop curso'>
                                     All Categories
                                 </div>
+
                                 <div className='search'>
                                     <input type ='text' placeholder= "Search for products..." />  
                                     <div className='SearchIcon'>
                                         <SearchIcon style={{fontSize:40,color:'#896605'}}/>  
                                     </div>                                  
                                 </div>
+
+
+                                <div className='search'>
+                                    <input type='text' className='form-control' placeholder='Search Products...'/>
                               </div>
                          </div>
                      </div>
                   </div>  
+                  </div>
             </header>
         </>
     )
