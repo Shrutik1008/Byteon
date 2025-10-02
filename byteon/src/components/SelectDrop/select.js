@@ -5,7 +5,7 @@ const Select = () => {
     return (
         <>
         <div className="selectDrop">
-            <div classname='searchField'>
+            <div className='searchField'>
                 <input type="text"/>
             </div>
         </div>
