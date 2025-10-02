@@ -1,9 +1,34 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../header/header.css';
 import Logo from '../../assets/images/Logo.png';
 import SearchIcon from '@mui/icons-material/Search';
-import Select from  '../SelectDrop/select';;
+import Select from  '../SelectDrop/select';
+import axios from 'axios';
+
 const Header =()=> {
+
+
+    const countryList=[];
+
+    useEffect(()=>{
+        getcountry('https://countriesnow.space/api/v0.1/countries/');
+    },[]);
+
+    const getcountry=async(url)=>{
+        try {
+        await axios.get(url).then((res) => {
+            if (res !== null) {
+            //console.log(res.data.data);
+            countryList.push(res.data.data.country);
+            }
+        });
+        } catch (error) {
+        console.log(error.message);
+        }
+
+    }
+
+
     return(
         <>
          <header>
