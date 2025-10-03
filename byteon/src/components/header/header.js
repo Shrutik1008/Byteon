@@ -19,7 +19,10 @@ const Header =()=> {
         await axios.get(url).then((res) => {
             if (res !== null) {
             //console.log(res.data.data);
-            countryList.push(res.data.data.country);
+           res.data.data.map((item,index)=>{
+            countryList.push(item.country);
+            console.log(item.countryList);
+           })
             }
         });
         } catch (error) {
@@ -41,9 +44,9 @@ const Header =()=> {
 {/*headerSearch Section*/}
                         <div className='col-sm-5'>
                               <div className='headerSearch d-flex align-items-center'>
-                                <div className='seletDrop curso'>
+                                <div className='seletDrop curso position-relative'>
                                     All Categories
-                                    <Select />
+                                    <select/>
                                 </div>
 
                                 <div className='search'>
@@ -52,11 +55,18 @@ const Header =()=> {
                                         <SearchIcon style={{fontSize:40,color:'#896605'}}/>  
                                     </div>                                  
                                 </div>
-                         </div>
-                     </div>
-                  </div>  
-                  </div>
-            </header>
+
+                              </div>
+                        </div>
+
+
+                        <div className='col-sm-5'>
+                            <Select data={countryList}/>
+                        </div>
+                 </div>
+         </div>
+                  
+</header>
         </>
     )
 }
